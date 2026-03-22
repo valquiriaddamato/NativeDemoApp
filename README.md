@@ -18,7 +18,7 @@ appium-doctor
 1. Open the project on IDE
 2. Install dependencies on terminal run it:
 ```sh
-npm install
+npx wdio config
 ```
 3. Open AVD Nexus 5 on Android run on cmd:
 ```sh
