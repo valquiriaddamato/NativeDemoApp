@@ -23,7 +23,8 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/android/*.js'
+        '../test/specs/android/test.login.js',
+        /*'../test/specs/android/test.signin.js'*/
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,12 +55,17 @@ exports.config = {
     capabilities: [{
         platformName: "Android",
             "appium:platformVersion": "11",
-            "appium:deviceName": "emulator-5554",
+            "appium:deviceName": "emulador-5554",
             "appium:automationName": "UIAutomator2",
             "appium:app": path.join(process.cwd(), "./app/android/android.wdio.native.app.v2.0.0.apk"),
             "appium:autoGrantPermissions": true
     }],
 
+    before: function (capabilities, specs) {
+        console.log('Iniciando o teste...');
+        //browser.maximizeWindow();
+        // Ações de setup, ex: logar no sistema
+    },
     //
     // ===================
     // Test Configurations

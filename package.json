@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha './test/specs/test.e2e.js'",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./config/wdio.conf.js"
   },
   "repository": {
     "type": "git",
