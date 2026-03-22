@@ -11,7 +11,7 @@ class LoginPage {
     }
 
     get btnSubmit () {
-        return $('//android.view.ViewGroup[@content-desc="button-LOGIN"]');
+        return $('accessibility id:button-LOGIN');
     }
 
     get msgEmailInvalid(){

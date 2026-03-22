@@ -19,7 +19,7 @@ class SignInPage {
     }
 
     get btnSubmit () {
-        return $('//android.view.ViewGroup[@content-desc="button-SIGN UP"]');
+        return $('accessibility id:button-SIGN UP');
     }
 
     get msgEmailInvalid(){
