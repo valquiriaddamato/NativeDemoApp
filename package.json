@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha run ./test/specs/test.e2e.js",
+    "test": "mocha './test/specs/test.e2e.js'",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "repository": {
