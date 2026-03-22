@@ -1,5 +1,5 @@
 const path = require('path');
-const { expect } = require('@wdio/globals')
+const { expect, driver } = require('@wdio/globals')
 const LoginPage = require('../../pageobjects/android/login.page');
 const AlertPage = require('../../pageobjects/android/alert.page')
 const NavigationBarPage = require('../../pageobjects/android/navigationbar.page')
@@ -36,4 +36,3 @@ describe('Login in wdio application', () => {
     });
     
 })
-

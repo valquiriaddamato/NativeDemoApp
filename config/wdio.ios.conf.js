@@ -11,19 +11,18 @@ const { config } = require('./wdio.conf');
     // Specify Test Files
     // ==================
     config.specs = [
-        '../test/specs/android/test.login.js',
-        '../test/specs/android/test.signin.js',
-        '../test/specs/android/test.form.js',
+        //Incluir testes de iOS quando estiver acesso ao BS
+        //'../test/specs/ios/*.js',
     ];
     // ============
     // Capabilities
     // ============
     config.capabilities = [{
-        platformName: "Android",
-            "appium:platformVersion": "11",
-            "appium:deviceName": "emulador-5554",
+        platformName: "iOS",
+            "appium:platformVersion": "16.0",
+            "appium:deviceName": "iPhone 14 Pro",
             "appium:automationName": "UIAutomator2",
-            "appium:app": path.join(process.cwd(), "./app/android/android.wdio.native.app.v2.0.0.apk"),
+            "appium:app": path.join(process.cwd(), "./app/ios/ios.wdio.native.app.v2.0.0.app"),
             "appium:autoGrantPermissions": true
     }];
     // Test runner services

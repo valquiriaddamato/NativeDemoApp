@@ -24,7 +24,6 @@ class FormPage {
 
     get btnActive () {
         return $('accessibility id:button-Active');
-        //clicavel
     }
 
     get btnInactive () {
