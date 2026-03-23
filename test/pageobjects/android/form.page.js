@@ -26,10 +26,6 @@ class FormPage {
         return $('accessibility id:button-Active');
     }
 
-    get btnInactive () {
-        return $('accessibility id:button-Inactive');
-    }
-
     get msgSwitch () {
         return $('accessibility id:switch-text');
     }
@@ -45,6 +41,7 @@ class FormPage {
     }
 
     async formDropdown () {
+        await this.inputText.waitForDisplayed();
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)');
         await this.dropdown.waitForDisplayed();
         await this.dropdown.click();
@@ -52,7 +49,9 @@ class FormPage {
     }
 
     async formBtn () {
+        await this.inputText.waitForDisplayed();
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)');
+        await this.btnActive.waitForDisplayed();
         await this.btnActive.click();
     }
 
