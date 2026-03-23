@@ -27,10 +27,10 @@ emulator @Nexus_5
 ```
 4. Run tests:
 ```sh
-npm run test:android"
+npm run test:android
 ```
 ```sh
-npm run test:ios"
+npm run test:ios
 ```
 5. Open Allure reports:
 ```sh
