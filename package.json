@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./config/wdio.android.conf.js",
+    "test:android": "wdio run ./config/wdio.android.conf.js",
+    "test:ios": "wdio run ./config/wdio.ios.conf.js",
+    "wdio": "wdio run ./wdio.conf.js"
   },
   "repository": {
     "type": "git",

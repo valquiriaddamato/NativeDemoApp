@@ -19,13 +19,16 @@ appium-doctor
 1. Open the project on IDE
 2. Install dependencies on terminal run it:
 ```sh
-npx wdio config
+npm install
 ```
 3. Open AVD Nexus 5 on Android run on cmd:
 ```sh
 emulator @Nexus_5
 ```
-4. Run all tests:
+4. Run tests:
 ```sh
-npx wdio
+npm run test:android"
+```
+```sh
+npm run test:ios"
 ```
