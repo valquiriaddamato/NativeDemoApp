@@ -32,3 +32,7 @@ npm run test:android"
 ```sh
 npm run test:ios"
 ```
+5. Open Allure reports:
+```sh
+npx allure open
+```
